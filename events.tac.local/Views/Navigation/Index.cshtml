@@ -1,0 +1,20 @@
+﻿@using events.tac.local.Models
+@model NavigationMenuItem
+
+<h4><a href="@Model.URL">@Model.Title</a></h4>
+<div class="sidebar sidebar-static">
+    @RenderMenu(Model)
+</div>
+
+@helper RenderMenu (NavigationMenuItem navMenu)
+{
+    if (navMenu.Children != null)
+    {
+<ul class="nav nav-pills nav-stacked">
+    @foreach (var child in navMenu.Children)
+    {
+        <li><a href="@child.URL">@child.Title</a></li>
+    }
+</ul> 
+    }
+}
