@@ -212,6 +212,7 @@
     <Content Include="Fonts\open-sans-v13-latin-regular.woff" />
     <Content Include="Fonts\open-sans-v13-latin-regular.woff2" />
     <Content Include="Images\Thumbs.db" />
+    <None Include="App_Config\Include\TAC\Events\events.site.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Views\TAC\Events\Layouts\Events.cshtml" />
